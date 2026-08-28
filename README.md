@@ -9,12 +9,7 @@ keystroke status	Check if a daemon is running
 keystroke encrypt/decrypt	Encrypt/decrypt log files
 
 
-# DEPENDENCIES
- 
-pip install pynput          # core keylogging
-pip install pycryptodome    # AES-256 / RC4 encryption (optional)
-pip install pyperclip       # clipboard monitoring (optional)
-pip install pyyaml          # YAML output format (optional)
+
 ## 🔧 Platform-Specific Setup
    Linux: sudo apt install python3-xlib python3-tk (for pynput)
    macOS: Grant Accessibility permissions in System Settings → Privacy & Security → Accessibility
