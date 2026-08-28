@@ -76,16 +76,5 @@ SOFTWARE.
 
 > If you cannot check every box, **do not use this tool.**ion timestamps
 
-# Quick Install
-bash
 
-# 1. Clone the repo
-git clone https://github.com/YOUR_USER/keystroke.git
-cd keystroke
-
-# 2. Install core dependencies
-pip install pynput
-
-# 3. Run it
-python keystroke.py --help
 
