@@ -7,28 +7,18 @@ keystroke replay	Play back a captured log
 keystroke sessions	List previous sessions
 keystroke status	Check if a daemon is running
 keystroke encrypt/decrypt	Encrypt/decrypt log files
-# USAGE EXAMPLE
-'''bash # Basic capture
-keystroke run -o capture.log
-Full reconnaissance mode
-keystroke run --mouse --clipboard --format json --encrypt aes256 --key "R3dT34m!" --daemon
-Replay with slow motion
-keystroke replay -f capture.log --slow 0.5
-List past sessions
-keystroke sessions'''
+
 
 # DEPENDENCIES
-'''bash  
+ 
 pip install pynput          # core keylogging
 pip install pycryptodome    # AES-256 / RC4 encryption (optional)
 pip install pyperclip       # clipboard monitoring (optional)
-pip install pyyaml          # YAML output format (optional)'''
-
+pip install pyyaml          # YAML output format (optional)
 ## 🔧 Platform-Specific Setup
-
-    Linux: sudo apt install python3-xlib python3-tk (for pynput)
-    macOS: Grant Accessibility permissions in System Settings → Privacy & Security → Accessibility
-    Windows: Runs out of the box (administrator rights recommended for cross-session capture)
+   Linux: sudo apt install python3-xlib python3-tk (for pynput)
+   macOS: Grant Accessibility permissions in System Settings → Privacy & Security → Accessibility
+   Windows: Runs out of the box (administrator rights recommended for cross-session capture)
 ## 🛡️ Security Features
 AES-256-CBC on-disk encryption with PBKDF2 key derivation
 RC4 fallback for lightweight encryption
