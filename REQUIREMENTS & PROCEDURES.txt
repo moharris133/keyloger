@@ -1,0 +1,33 @@
+# Requirements.txt
+
+ pip install -r requirements.txt:
+```bash
+pynput>=1.7.6
+pycryptodome>=3.20.0
+pyperclip>=1.8.2
+pyyaml>=6.0.2```
+
+# Troubleshooting
+```bash
+Problem	Fix
+ModuleNotFoundError: No module named 'pynput'	Run pip install pynput
+Linux: ImportError: No module named Xlib	sudo apt install python3-xlib
+macOS: keys not detected	Grant Accessibility permission in System Settings and restart terminal
+Permission denied on Linux	Run with sudo or add user to input group
+[Errno 13] Permission denied for PID file	mkdir -p ~/.keystroke && chmod 777 ~/.keystroke
+ADB: device unauthorized	Accept the RSA fingerprint prompt on the phone screen```
+
+# QUICKINSTALL
+```bash
+ # 1. Clone the repo
+git clone https://github.com/YOUR_USER/keystroke.git
+cd keystroke
+
+# 2. Install core dependencies
+pip install pynput
+
+# 3. Run it
+python keystroke.py --help```
+
+
+ 
