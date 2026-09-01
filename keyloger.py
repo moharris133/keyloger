@@ -1,4 +1,33 @@
 #!/usr/bin/env python3
+""" #!/usr/bin/env python3
+"""
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  Keystroke — Keyboard Capture Utility                                      ║
+║  Version 2.1.0                                                             ║
+║                                                                            ║
+║  DISCLAIMER                                                                ║
+║  ───────────                                                               ║
+║  This software is provided for EDUCATIONAL PURPOSES and AUTHORIZED         ║
+║  SECURITY ASSESSMENTS ONLY.                                                ║
+║                                                                            ║
+║  Unauthorized use of this tool to intercept, record, or monitor            ║
+║  keystrokes without explicit consent from the device owner is ILLEGAL      ║
+║  and violates:                                                             ║
+║    • Computer Fraud and Abuse Act (CFAA) — 18 U.S.C. § 1030               ║
+║    • Electronic Communications Privacy Act (ECPA) — 18 U.S.C. § 2510      ║
+║    • GDPR Article 5(1)(c) — data minimization & lawful processing         ║
+║    • Computer Misuse Act 1990 (UK) — Section 1 Unauthorised access        ║
+║    • Similar laws in all jurisdictions worldwide                          ║
+║                                                                            ║
+║  By using this software you agree that:                                    ║
+║    1. You have EXPLICIT WRITTEN AUTHORIZATION to test the target           ║
+║       system(s).                                                           ║
+║    2. You accept FULL RESPONSIBILITY for your actions.                     ║
+║    3. The author(s) and contributors bear NO LIABILITY for misuse          ║
+║       or damages arising from this software.                               ║
+║                                                                            ║
+║  If you do not have authorization, STOP IMMEDIATELY.                      ║
+╚══════════════════════════════════════════════════════════════════════════════╝
 """
 ┌─────────────────────────────────────────────────────────┐
 │  Keystroke — Python Keylogger CLI Tool                 │
